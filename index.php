@@ -41,7 +41,7 @@
                     </thead>
                     <tbody>
                         <?php
-                            if ($note -> fetch_assoc() > 0) {
+                            if ($rowcount > 0) {
                                 while($row = $note -> fetch_assoc()) {
                                     $id = $row["id"];
                                     $title = $row["title"];
