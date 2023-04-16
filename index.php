@@ -2,6 +2,7 @@
     require("mysql_connect.php");
     $note = mysqli_query($conn, 'SELECT * FROM notes');
     $rowcount = mysqli_num_rows($note);
+    echo $note;
 ?>
 
 <!DOCTYPE html>
