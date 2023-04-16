@@ -2,9 +2,10 @@
     require("mysql_connect.php");
     $note = mysqli_query($conn, 'SELECT * FROM notes');
     $rowcount = mysqli_num_rows($note);
+    echo $rowcount;
     /* fetch associative array */
-    while ($row = mysqli_fetch_assoc($note)) {
-        printf("%s (%s)\n", $row["id"], $row["title"]);
+    #while ($row = mysqli_fetch_assoc($note)) {
+    #    printf("%s (%s)\n", $row["id"], $row["title"]);
 ?>
 
 <!DOCTYPE html>
